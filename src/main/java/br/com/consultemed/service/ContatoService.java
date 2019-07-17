@@ -22,6 +22,7 @@ public class ContatoService implements IContato, Serializable {
 
 	@Inject
 	private ContatoDAO dao;
+	
 
 	@Override
 	public void salvar(Contato contato) {

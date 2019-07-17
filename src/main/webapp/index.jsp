@@ -1,1 +1,1 @@
-<h1>Carlos</h1>
+<jsp:forward page="admin/dashboard"></jsp:forward>
