@@ -43,13 +43,11 @@ public class FilterLoggin implements Filter {
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		// TODO 
-		
+
 	}
 
 	@Override
 	public void destroy() {
-		// TODO 
 		
 	}
 }

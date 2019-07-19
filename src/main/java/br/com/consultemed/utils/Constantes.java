@@ -61,7 +61,7 @@ public class Constantes {
 	public static final String VISITANTE = "Visitante";
 	
 	//PERSISTENCE_UNITE
-	public static final String PERSISTENCE_UNIT_NAME = "ACME";
+	public static final String PERSISTENCE_UNIT_NAME = "CONSULTEMED";
 	
 	
 	
