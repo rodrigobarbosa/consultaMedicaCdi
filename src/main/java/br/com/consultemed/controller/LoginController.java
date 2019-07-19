@@ -15,6 +15,7 @@ import br.com.consultemed.model.Usuario;
 import br.com.consultemed.service.ContatoBusiness;
 import br.com.consultemed.service.UsuarioBusiness;
 import br.com.consultemed.utils.Constantes;
+import br.com.consultemed.utils.Criptografia;
 
 /**
  * Servlet implementation class LoginController
@@ -43,6 +44,11 @@ public class LoginController extends HttpServlet {
 
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
+		
+		String cripto = Criptografia.criptografar(senha);
+		senha = cripto;
+		
+		System.out.println(cripto);
 		
 		Map<String, String> erro = new HashMap<String, String>();
 

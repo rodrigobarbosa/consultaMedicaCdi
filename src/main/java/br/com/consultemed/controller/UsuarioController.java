@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.consultemed.model.Usuario;
 import br.com.consultemed.service.UsuarioBusiness;
 import br.com.consultemed.utils.Constantes;
+import br.com.consultemed.utils.Criptografia;
 
 /**
  * Servlet implementation class Controller
@@ -143,7 +144,7 @@ public class UsuarioController extends HttpServlet {
 		
 		String nome = request.getParameter("nome");
 		String login = request.getParameter("login");
-		String senha = request.getParameter("senha");
+		String senha = request.getParameter(Criptografia.criptografar("senha"));
 		String telefone = request.getParameter("telefone");
 		String email = request.getParameter("email");
 		String id = request.getParameter("id");
