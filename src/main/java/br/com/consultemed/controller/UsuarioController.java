@@ -3,6 +3,7 @@ package br.com.consultemed.controller;
 import java.io.IOException;
 import java.util.Collection;
 
+import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +22,7 @@ import br.com.consultemed.utils.Criptografia;
 @WebServlet("/admin/usuarios")
 public class UsuarioController extends HttpServlet {
 
+	@Inject
 	private UsuarioBusiness business;
 
 	private static final long serialVersionUID = 1L;
@@ -144,7 +146,8 @@ public class UsuarioController extends HttpServlet {
 		
 		String nome = request.getParameter("nome");
 		String login = request.getParameter("login");
-		String senha = request.getParameter(Criptografia.criptografar("senha"));
+		String senha = request.getParameter("senha");
+		
 		String telefone = request.getParameter("telefone");
 		String email = request.getParameter("email");
 		String id = request.getParameter("id");
@@ -167,7 +170,7 @@ public class UsuarioController extends HttpServlet {
 			
 		usuario.setLogin(login);
 		usuario.setNome(nome);
-		usuario.setSenha(senha);
+		usuario.setSenha(Criptografia.criptografar(senha));
 		usuario.setTelefones(telefone);
 		usuario.setEmail(email);
 		usuario.setAtivo(isAtivo);

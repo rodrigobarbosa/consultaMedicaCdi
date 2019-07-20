@@ -52,7 +52,7 @@
                 
                 <div class="form-group">
                   <label for="telefone">Telefone</label>
-                  <input type="telefone" name="telefone" class="form-control" value="${contato.telefone}" id="telefone" placeholder="Informe o email">
+                  <input type="telefone" name="telefone" class="form-control" value="${contato.telefones}" id="telefone" placeholder="Informe o email">
                 </div>
                 
               </div>
