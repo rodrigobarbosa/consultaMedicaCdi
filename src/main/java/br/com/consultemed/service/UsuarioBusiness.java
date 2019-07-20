@@ -5,6 +5,8 @@ package br.com.consultemed.service;
 
 import java.util.Collection;
 
+import javax.inject.Inject;
+
 import br.com.consultemed.dao.UsuarioDaoImpl;
 import br.com.consultemed.model.Usuario;
 
@@ -14,6 +16,7 @@ import br.com.consultemed.model.Usuario;
  */
 public class UsuarioBusiness {
 
+	@Inject
 	private UsuarioDaoImpl dao;
 
 	public UsuarioBusiness() {

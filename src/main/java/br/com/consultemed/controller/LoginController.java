@@ -35,7 +35,8 @@ public class LoginController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		 RequestDispatcher rd = request.getRequestDispatcher(Constantes.LOGIN);
+
+		RequestDispatcher rd = request.getRequestDispatcher(Constantes.LOGIN);
 		 rd.forward(request, response);
 	}
 
