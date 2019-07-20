@@ -32,6 +32,12 @@ public class Constantes {
 	public static final String CONTATO_REMOVIDO = "  removido com sucesso";
 	public static final String CONTATO_EDITADO = "  alterado com sucesso";
 	
+	//MENSAGENS DA TELA PACIENTE
+	public static final String PACIENTE = "paciente";
+	public static final String PACIENTE_SUCESSO = " cadastrado com sucesso";
+	public static final String PACIENTE_REMOVIDO = "  removido com sucesso";
+	public static final String PACIENTE_EDITADO = "  alterado com sucesso";
+	
 	//MENSAGENS DA TELA USUARIO
 	public static final String USUARIO = " usuário";
 	public static final String USUARIO_SUCESSO = "  cadastrado(a) com sucesso";
@@ -41,10 +47,12 @@ public class Constantes {
 	//MENSAGENS DA TELA USUARIO
 	public static final String SOLICITACAO = "solicitação";
 
-	
 	//URL DO SISTEMA
 	public static final String CONTATOS = "/admin/pages/contatos/list_contatos.jsp";
 	public static final String ADD_CONTATOS = "/admin/pages/contatos/add_contatos.jsp";
+	
+	public static final String PACIENTES = "/admin/pages/pacientes/list_pacientes.jsp";
+	public static final String ADD_PACIENTES = "/admin/pages/pacientes/add_pacientes.jsp";
 	
 	public static final String USUARIOS = "/admin/pages/usuarios/list_usuarios.jsp";
 	public static final String ADD_USUARIOS = "/admin/pages/usuarios/add_usuarios.jsp";
