@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,12 +26,13 @@ public class LoginController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
+	@Inject
 	private UsuarioBusiness usuarioBusiness;
+	
+	@Inject
 	private ContatoBusiness contatoBusiness;
 
 	public LoginController() {
-		this.contatoBusiness = new ContatoBusiness();
-		this.usuarioBusiness = new UsuarioBusiness();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)

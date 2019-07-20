@@ -7,8 +7,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
@@ -20,6 +22,7 @@ import br.com.consultemed.utils.JPAUtils;
  *
  */
 public class UsuarioDaoImpl implements IUsuarioDao {
+
 
 	EntityManagerFactory emf = JPAUtils.getEntityManagerFactory();
 	EntityManager factory = null;
