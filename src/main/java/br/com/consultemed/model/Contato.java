@@ -20,7 +20,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name="TB_CONTATOS")
 public class Contato extends AbstractEntity<Long> {
-
 	
 	private String nome;
 	

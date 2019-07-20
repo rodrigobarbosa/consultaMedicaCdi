@@ -1,8 +1,11 @@
 package br.com.consultemed.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @SuppressWarnings("serial")
@@ -47,4 +50,31 @@ public class Paciente extends AbstractEntity<Long>{
 	public void setIdentificacao(String identificacao) {
 		this.identificacao = identificacao;
 	}
+	
+//	@OneToMany(mappedBy = "paciente")
+//	private List<Contato> contatos;
+//	
+//	@OneToMany(mappedBy = "paciente")
+//	private List<Agendamento> agendamento;
+//
+//
+//	public List<Agendamento> getAgendamento() {
+//		return agendamento;
+//	}
+//
+//	public void setAgendamento(List<Agendamento> agendamento) {
+//		this.agendamento = agendamento;
+//	}
+//
+//	public List<Contato> getContatos() {
+//		return contatos;
+//	}
+//
+//	public void setContatos(List<Contato> contatos) {
+//		this.contatos = contatos;
+//	}
+//	
+//	public void realizaAgendamento(Agendamento agendamento) {
+//		
+//	}
 }

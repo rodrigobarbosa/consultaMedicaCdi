@@ -38,7 +38,7 @@ public class PacienteDaoImpl implements IPacienteDao {
 		}
 	}
 
-	public Paciente findByCpf(Long cpf) throws Exception  {
+	public Paciente findByCpf(String cpf) throws Exception  {
 		this.factory = emf.createEntityManager();
 		Paciente paciente = new Paciente();
 		try {
@@ -54,7 +54,7 @@ public class PacienteDaoImpl implements IPacienteDao {
 		return null;
 	}
 
-	public void deleteByCpf(Long cpf) throws Exception {
+	public void deleteByCpf(String cpf) throws Exception {
 		this.factory = emf.createEntityManager();
 		Paciente paciente = new Paciente();
 

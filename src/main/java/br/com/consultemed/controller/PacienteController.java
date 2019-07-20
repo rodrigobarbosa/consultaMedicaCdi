@@ -132,7 +132,7 @@ public class PacienteController extends HttpServlet {
 	 */
 	private void delete(HttpServletRequest request, HttpServletResponse response) throws NumberFormatException, Exception {
 		
-		this.business.deleteByCpf(Long.parseLong(request.getParameter(CPF_PACIENTE)));
+		this.business.deleteById(Long.parseLong(request.getParameter(ID_PACIENTE)));
 		request.setAttribute("remover", Constantes.PACIENTE + Constantes.PACIENTE_REMOVIDO);
 		
 		try {
@@ -154,7 +154,7 @@ public class PacienteController extends HttpServlet {
 	 */
 	private void editar(HttpServletRequest request, HttpServletResponse response) throws NumberFormatException, Exception {
 
-		Paciente paciente = this.business.findByCpf(Long.parseLong(request.getParameter(CPF_PACIENTE)));
+		Paciente paciente = this.business.findById(Long.parseLong(request.getParameter(ID_PACIENTE)));
 		RequestDispatcher rd = request.getRequestDispatcher(Constantes.ADD_PACIENTES);
 		request.setAttribute("paciente", paciente);
 		rd.forward(request, response);
