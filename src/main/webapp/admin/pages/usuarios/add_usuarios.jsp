@@ -62,7 +62,7 @@
                 
                 <div class="form-group">
                   <label for="telefone">Telefone</label>
-                  <input type="telefone" name="telefone" class="form-control" required="required" value="${usuario.telefone}" id="telefone" placeholder="Informe o email">
+                  <input type="telefone" name="telefone" class="form-control" required="required" value="${usuario.telefones}" id="telefone" placeholder="Informe o email">
                 </div>
                 
                 <div class="form-group">

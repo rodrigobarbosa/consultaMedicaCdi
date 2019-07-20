@@ -20,7 +20,7 @@ public class UsuarioBusiness {
 	private UsuarioDaoImpl dao;
 
 	public UsuarioBusiness() {
-
+		this.dao = new UsuarioDaoImpl();
 	}
 	
 	public void save(Usuario usuario) throws Exception  {
